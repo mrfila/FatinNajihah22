@@ -1,0 +1,104 @@
+@font-face {
+	font-family: 'Georgia';
+	src: url(../assets/fonts/georgia.ttf);
+}
+
+body {
+    margin: 0;
+    background: #ede9e6;
+}
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+} 
+.hidden {
+    opacity:0;
+    transition: opacity 2s;
+} 
+h1 {
+    font-weight: bold;
+    font-size: 2rem;
+    font-style: italic;
+}
+ul{
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+}
+li span {
+    display: block;
+    font-size:2rem;  
+}
+#countdownTimer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: #eee8e0;
+    transition: opacity 2s;
+}
+.container {
+    color: rgba(55, 59, 65, 0.8);
+    font-weight: lighter;
+    text-align: center;
+    position: absolute;
+}
+
+/* SECTION 1 */
+
+#firstPage {
+    background:url("../assets/images/bg1.png") no-repeat center center;        background-size: contain;
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+    transition: opacity 2s;   
+}
+
+/* SECTION 2 */
+
+#section2{
+   height: 50vh;
+}
+#secondPage{
+    background-size: contain;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    opacity: 1;
+    padding: 5px;
+    transition: opacity 2s;  
+}
+#secondPageText {
+
+    font-family: 'Georgia';
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-decoration: line-through;
+}
+
+/* SECTION 2 */
+
+.o-video {
+    width: 100%;
+    height: 0;
+    position: relative;
+    padding-top: 56.25%; /* 9 / 16 * 100 */
+  }
+  .o-video > iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+  }
